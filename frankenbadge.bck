@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MCP1700T
+D MCP1754ST, Fixed 150mA Low Dropout Voltage Regulator, Positive
+K REGULATOR LDO
+F http://ww1.microchip.com/downloads/en/DeviceDoc/20002276C.pdf
+$ENDCMP
+#
+$CMP PIC32MX270
+D TQFP44, 32k Flash, 2k SRAM, 1k EEPROM, JTAG
+K AVR 8bit Microcontroller MegaAVR
+F http://www.atmel.com/Images/doc2503.pdf
+$ENDCMP
+#
+#End Doc Library
