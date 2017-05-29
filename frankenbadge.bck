@@ -1,5 +1,10 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP COG-C144MVGI-08
+D display, 1x12 interface
+K display
+$ENDCMP
+#
 $CMP MCP1700T
 D MCP1754ST, Fixed 150mA Low Dropout Voltage Regulator, Positive
 K REGULATOR LDO
