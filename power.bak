@@ -1,0 +1,406 @@
+EESchema Schematic File Version 2
+LIBS:frankenbadge-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:frankenbadge
+LIBS:frankenbadge-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCP1700T U302
+U 1 1 592C0643
+P 5135 1695
+F 0 "U302" H 5255 1845 50  0000 C CNN
+F 1 "MCP1700T" H 4745 1695 50  0000 C CNN
+F 2 "" H 5135 1695 50  0000 C CNN
+F 3 "" H 5135 1695 50  0000 C CNN
+	1    5135 1695
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR306
+U 1 1 592C064A
+P 5015 2005
+F 0 "#PWR306" H 5015 1755 50  0001 C CNN
+F 1 "GND" H 5015 1855 50  0000 C CNN
+F 2 "" H 5015 2005 50  0000 C CNN
+F 3 "" H 5015 2005 50  0000 C CNN
+	1    5015 2005
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C304
+U 1 1 592C0651
+P 5255 2135
+F 0 "C304" H 5265 2205 50  0000 L CNN
+F 1 "1u" H 5025 2135 50  0000 L CNN
+F 2 "" H 5255 2135 50  0000 C CNN
+F 3 "" H 5255 2135 50  0000 C CNN
+F 4 "Value" H 5255 2135 60  0001 C CNN "Fieldname"
+	1    5255 2135
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR307
+U 1 1 592C0658
+P 5255 2275
+F 0 "#PWR307" H 5255 2025 50  0001 C CNN
+F 1 "GND" H 5255 2125 50  0000 C CNN
+F 2 "" H 5255 2275 50  0000 C CNN
+F 3 "" H 5255 2275 50  0000 C CNN
+	1    5255 2275
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR308
+U 1 1 592C065E
+P 5885 1955
+F 0 "#PWR308" H 5885 1805 50  0001 C CNN
+F 1 "+3.3V" H 5885 2095 50  0000 C CNN
+F 2 "" H 5885 1955 50  0000 C CNN
+F 3 "" H 5885 1955 50  0000 C CNN
+	1    5885 1955
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5015 1895 5015 2005
+Wire Wire Line
+	5255 2235 5255 2275
+Wire Wire Line
+	5255 1895 5255 1955
+Wire Wire Line
+	5255 1955 5255 2035
+Wire Wire Line
+	5885 1955 5255 1955
+Connection ~ 5255 1955
+$Comp
+L C_Small C303
+U 1 1 592C066C
+P 4280 1595
+F 0 "C303" H 4290 1665 50  0000 L CNN
+F 1 "1u" H 4050 1595 50  0000 L CNN
+F 2 "" H 4280 1595 50  0000 C CNN
+F 3 "" H 4280 1595 50  0000 C CNN
+F 4 "Value" H 4280 1595 60  0001 C CNN "Fieldname"
+	1    4280 1595
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR305
+U 1 1 592C0673
+P 4280 1735
+F 0 "#PWR305" H 4280 1485 50  0001 C CNN
+F 1 "GND" H 4280 1585 50  0000 C CNN
+F 2 "" H 4280 1735 50  0000 C CNN
+F 3 "" H 4280 1735 50  0000 C CNN
+	1    4280 1735
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4280 1695 4280 1735
+Wire Wire Line
+	5135 1495 4380 1495
+Wire Wire Line
+	3880 1495 4280 1495
+Wire Wire Line
+	4280 1495 4380 1495
+Connection ~ 4280 1495
+$Comp
+L Battery-RESCUE-frankenbadge BT301
+U 1 1 592C0EAF
+P 1525 3345
+F 0 "BT301" H 1355 3455 50  0000 L CNN
+F 1 "Bat" H 1345 3235 50  0000 L CNN
+F 2 "" V 1525 3385 50  0000 C CNN
+F 3 "" V 1525 3385 50  0000 C CNN
+	1    1525 3345
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR301
+U 1 1 592C0EB6
+P 1525 3605
+F 0 "#PWR301" H 1525 3355 50  0001 C CNN
+F 1 "GND" H 1525 3455 50  0000 C CNN
+F 2 "" H 1525 3605 50  0000 C CNN
+F 3 "" H 1525 3605 50  0000 C CNN
+	1    1525 3605
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C301
+U 1 1 592C0EBD
+P 1765 3335
+F 0 "C301" H 1775 3405 50  0000 L CNN
+F 1 "4.7u" H 1775 3255 50  0000 L CNN
+F 2 "" H 1765 3335 50  0000 C CNN
+F 3 "" H 1765 3335 50  0000 C CNN
+F 4 "Value" H 1765 3335 60  0001 C CNN "Fieldname"
+	1    1765 3335
+	-1   0    0    1   
+$EndComp
+$Comp
+L MCP1623/24 U301
+U 1 1 592C0EC5
+P 2495 3405
+F 0 "U301" H 2495 3695 60  0000 C CNN
+F 1 "MCP1623/24" H 2505 3235 60  0000 C CNN
+F 2 "" H 2495 3385 60  0000 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001420D.pdf" H 2495 3385 60  0001 C CNN
+F 4 "Value" H 2495 3405 60  0001 C CNN "Fieldname"
+	1    2495 3405
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Small L301
+U 1 1 592C0ECD
+P 1975 3095
+F 0 "L301" V 1925 3055 50  0000 L CNN
+F 1 "4.7 uH" V 2045 2945 50  0000 L CNN
+F 2 "" H 1975 3095 50  0000 C CNN
+F 3 "" H 1975 3095 50  0000 C CNN
+F 4 "Value" H 1975 3095 60  0001 C CNN "Fieldname"
+	1    1975 3095
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R302
+U 1 1 592C0ED5
+P 3035 3315
+F 0 "R302" H 3065 3335 50  0000 L CNN
+F 1 "6041" H 3065 3275 50  0000 L CNN
+F 2 "" H 3035 3315 50  0000 C CNN
+F 3 "" H 3035 3315 50  0000 C CNN
+F 4 "Value" H 3035 3315 60  0001 C CNN "Fieldname"
+	1    3035 3315
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R303
+U 1 1 592C0EDD
+P 3035 3575
+F 0 "R303" H 3065 3595 50  0000 L CNN
+F 1 "3011" H 3065 3535 50  0000 L CNN
+F 2 "" H 3035 3575 50  0000 C CNN
+F 3 "" H 3035 3575 50  0000 C CNN
+F 4 "Value" H 3035 3575 60  0001 C CNN "Fieldname"
+	1    3035 3575
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C302
+U 1 1 592C0EE5
+P 3265 3415
+F 0 "C302" H 3275 3485 50  0000 L CNN
+F 1 "10u" H 3035 3415 50  0000 L CNN
+F 2 "" H 3265 3415 50  0000 C CNN
+F 3 "" H 3265 3415 50  0000 C CNN
+F 4 "Value" H 3265 3415 60  0001 C CNN "Fieldname"
+	1    3265 3415
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR302
+U 1 1 592C0EEC
+P 1975 3355
+F 0 "#PWR302" H 1975 3105 50  0001 C CNN
+F 1 "GND" H 1975 3205 50  0000 C CNN
+F 2 "" H 1975 3355 50  0000 C CNN
+F 3 "" H 1975 3355 50  0000 C CNN
+	1    1975 3355
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR304
+U 1 1 592C0EF2
+P 3035 3745
+F 0 "#PWR304" H 3035 3495 50  0001 C CNN
+F 1 "GND" H 3035 3595 50  0000 C CNN
+F 2 "" H 3035 3745 50  0000 C CNN
+F 3 "" H 3035 3745 50  0000 C CNN
+	1    3035 3745
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1525 3495 1525 3525
+Wire Wire Line
+	1525 3525 1525 3605
+Wire Wire Line
+	1765 3435 1765 3525
+Wire Wire Line
+	1765 3525 1525 3525
+Connection ~ 1525 3525
+Wire Wire Line
+	1525 3195 1645 3195
+Wire Wire Line
+	1645 3195 1765 3195
+Wire Wire Line
+	1765 3195 1845 3195
+Wire Wire Line
+	1765 3195 1765 3235
+Wire Wire Line
+	2075 3095 2075 3255
+Wire Wire Line
+	2075 3255 2095 3255
+Wire Wire Line
+	1875 3105 1645 3105
+Wire Wire Line
+	1645 2965 1645 3105
+Wire Wire Line
+	1645 3105 1645 3195
+Connection ~ 1645 3195
+Wire Wire Line
+	1645 2965 2915 2965
+Wire Wire Line
+	2915 2965 2915 3255
+Connection ~ 1645 3105
+Wire Wire Line
+	1845 3195 1845 3645
+Wire Wire Line
+	1845 3645 2095 3645
+Wire Wire Line
+	2095 3645 2095 3445
+Connection ~ 1765 3195
+Wire Wire Line
+	2095 3355 1975 3355
+Wire Wire Line
+	3035 3415 3035 3445
+Wire Wire Line
+	3035 3445 3035 3475
+Wire Wire Line
+	2915 3445 3035 3445
+Connection ~ 3035 3445
+Wire Wire Line
+	3035 3675 3035 3715
+Wire Wire Line
+	3035 3715 3035 3745
+Wire Wire Line
+	3265 3515 3265 3715
+Wire Wire Line
+	3265 3715 3035 3715
+Connection ~ 3035 3715
+Wire Wire Line
+	2975 3215 3035 3215
+Wire Wire Line
+	3035 3215 3265 3215
+Wire Wire Line
+	3265 3215 3595 3215
+Wire Wire Line
+	3265 3315 3265 3215
+Connection ~ 3265 3215
+Wire Wire Line
+	1875 3095 1875 3105
+Wire Wire Line
+	2915 3355 2975 3355
+Wire Wire Line
+	2975 3355 2975 3215
+Connection ~ 3035 3215
+Text Notes 3520 3960 0    60   ~ 0
+Note: Vfb will be 1.21V under regulation
+Text Notes 3520 3810 0    60   ~ 0
+Note: Vusb will be  approx. 3.64V under regulation
+Text HLabel 3880 1495 0    60   Input ~ 0
+Vusb
+Text HLabel 3595 3215 2    60   Input ~ 0
+Vusb
+$Comp
+L USB_A-RESCUE-frankenbadge P301
+U 1 1 592C179F
+P 2995 1680
+F 0 "P301" H 3195 1480 50  0000 C CNN
+F 1 "USB_A" H 2945 1880 50  0000 C CNN
+F 2 "" V 2945 1580 50  0000 C CNN
+F 3 "" V 2945 1580 50  0000 C CNN
+	1    2995 1680
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR303
+U 1 1 592C17A6
+P 2895 2110
+F 0 "#PWR303" H 2895 1860 50  0001 C CNN
+F 1 "GND" H 2895 1960 50  0000 C CNN
+F 2 "" H 2895 2110 50  0000 C CNN
+F 3 "" H 2895 2110 50  0000 C CNN
+	1    2895 2110
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R301
+U 1 1 592C17AD
+P 2925 1170
+F 0 "R301" V 2865 1130 50  0000 L CNN
+F 1 "0R" V 2995 1130 50  0000 L CNN
+F 2 "" H 2925 1170 50  0000 C CNN
+F 3 "" H 2925 1170 50  0000 C CNN
+F 4 "Value" H 2925 1170 60  0001 C CNN "Fieldname"
+	1    2925 1170
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3095 2110 3095 1980
+Wire Wire Line
+	2695 2110 2895 2110
+Wire Wire Line
+	2895 2110 3095 2110
+Wire Wire Line
+	2695 2110 2695 1780
+Connection ~ 2895 2110
+Wire Wire Line
+	3145 1170 3025 1170
+Wire Wire Line
+	2825 1170 2695 1170
+Wire Wire Line
+	2695 1170 2695 1480
+Wire Wire Line
+	2435 1680 2695 1680
+Wire Wire Line
+	2435 1580 2695 1580
+Text Notes 2045 985  0    60   ~ 0
+Note: Only -ONE- of either battery or USB should power Vfeed at a \ngiven time, as the voltages (5V and 3.64V) will conflict!
+Text HLabel 2435 1580 0    60   Input ~ 0
+D-
+Text HLabel 2435 1680 0    60   Input ~ 0
+D+
+Text HLabel 3145 1170 2    60   Input ~ 0
+Vusb
+$EndSCHEMATC
